@@ -50,7 +50,7 @@ def write_to_xml(xml_file):
 
     # Generate the array starting from 0 and incrementing by 1
     result_array = list(range(0, length + 1))
-    # result_array = ['0'] * length
+    # result_array = ['-1'] * length
 
     # Replace each match with a separate line where the number is incremented sequentially
     modified_xml_data = xml_data
@@ -67,9 +67,10 @@ xml_file = './data.xml'
 
 # Values before editing
 old_values = extract_values(xml_file)
-print(f"\nOld values:\n{print(old_values)}")
+print(f"\nOld values:")
+print(f"{print(old_values)}")
 
 # Values after editing
-values = write_to_xml(xml_file)
-new_values = extract_values(xml_file)
-print(f"\nNew values:\n{print(new_values)}")
+# values = write_to_xml(xml_file)
+# new_values = extract_values(xml_file)
+# print(f"\nNew values:\n{print(new_values)}")
